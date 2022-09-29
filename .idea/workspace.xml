@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50a9cb63-2cc8-4769-9ba6-83232ff4735f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyFirstIntelliJProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MyFirstIntelliJProject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entities/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StringExercises.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StringExercises.java" afterDir="false" />
-    </list>
+    <list default="true" id="50a9cb63-2cc8-4769-9ba6-83232ff4735f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,6 +51,7 @@
       <updated>1664174042860</updated>
       <workItem from="1664174052184" duration="19533000" />
       <workItem from="1664264321048" duration="2316000" />
+      <workItem from="1664442309239" duration="624000" />
     </task>
     <servers />
   </component>
