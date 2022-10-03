@@ -66,7 +66,4 @@ public class StringExerciseController {
         txtOutput.setText(exNo + StringExercises.exercise9(input));
     }
 
-    public void onButton10Click(ActionEvent actionEvent) {
-    }
-
 }
