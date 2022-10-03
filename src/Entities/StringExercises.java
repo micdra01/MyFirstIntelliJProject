@@ -153,7 +153,9 @@ public class StringExercises {
         String output = "";
         for (int i = 0; i < input.length(); i++) {
             char x = input.charAt(i);
+            if (Character.isWhitespace(x)) {
 
+            }
             if (i % 2 == 0) {
                 x = Character.toUpperCase(x);
                 output = output + x;

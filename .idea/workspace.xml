@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50a9cb63-2cc8-4769-9ba6-83232ff4735f" name="Changes" comment="Exercise 1-9 with GUI incl. tooltips">
+    <list default="true" id="50a9cb63-2cc8-4769-9ba6-83232ff4735f" name="Changes" comment="Exercise 1-9 with GUIv2 incl. tooltips">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Views/StringExerciseView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/Views/StringExerciseView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entities/StringExercises.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entities/StringExercises.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +51,28 @@
     "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="App" />
+      <module name="MyFirstIntelliJProject" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="MyFirstIntelliJProject" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -62,7 +85,7 @@
       <workItem from="1664264321048" duration="2316000" />
       <workItem from="1664442309239" duration="2170000" />
       <workItem from="1664518672133" duration="11020000" />
-      <workItem from="1664780509486" duration="6907000" />
+      <workItem from="1664780509486" duration="11815000" />
     </task>
     <task id="LOCAL-00001" summary="Exercise 1-9 with GUI incl. tooltips">
       <created>1664786314322</created>
@@ -71,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1664786314322</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Exercise 1-9 with GUIv2 incl. tooltips">
+      <created>1664788031923</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1664788031923</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -90,7 +120,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Exercise 1-9 with GUI incl. tooltips" />
-    <option name="LAST_COMMIT_MESSAGE" value="Exercise 1-9 with GUI incl. tooltips" />
+    <MESSAGE value="Exercise 1-9 with GUIv2 incl. tooltips" />
+    <option name="LAST_COMMIT_MESSAGE" value="Exercise 1-9 with GUIv2 incl. tooltips" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
