@@ -1,50 +1,52 @@
+package Entities;
+
 public class StringExercises {
     /**
      * Exercise 1:
      * surround the input with tags like: "jeppe" -> "<jeppe>". Print the result to the screen
      */
-    public void exercise1(String input) {
+    public static String exercise1(String input) {
         String output = "<" + input + ">";
-        System.out.println("Exercise 1) " + output);
+        return output;
     }
 
     /**
      * Exercise 2:
      * count the amount of characters in the input and write the number of characters to the screen
      */
-    public void exercise2(String input) {
+    public static int exercise2(String input) {
         int nameLength = input.length();
-        System.out.println("Exercise 2) " + "Length: " + nameLength);
+        return nameLength;
     }
 
     /**
      * Exercise 3:
      * seperate each character in the string with a "@"
      */
-    public void exercise3(String input) {
-        System.out.print("Exercise 3) ");
+    public static String exercise3(String input) {
+        String output = "@";
         for (int i = 0; i < input.length(); i++) {
-            System.out.print(input.charAt(i) + "@");
+            output = output + input.charAt(i) + "@";
         }
-        System.out.println("");
+        return output;
     }
 
     /**
      * Exercise 4:
      * write the input characters backwards
      */
-    public void exercise4(String input) {
-        System.out.print("Exercise 4) ");
+    public static String exercise4(String input) {
+        String output = "";
         for (int i = (input.length() - 1); i >= 0; i--) {
-            System.out.print(input.charAt(i));
+            output = output + input.charAt(i);
         }
-        System.out.println("");
+        return output;
     }
 
     /**
      * Converts a char to morse code
      */
-    private String getMorse(char c) {
+    private static String getMorse(char c) {
         switch (Character.toLowerCase(c)) {
             case 'a':
                 return ".-";
@@ -110,119 +112,128 @@ public class StringExercises {
      * Exercise 5:
      * Convert the input to morse code
      */
-    public void exercise5(String input) {
-        System.out.print("Exercise 5) ");
+    public static String exercise5(String input) {
+        String output = "";
         for (int æ = 0; æ < input.length(); æ++) {
             char å = input.charAt(æ);
-            System.out.print(getMorse(å) + " ");
+            output = output + (getMorse(å) + " ");
         }
-        System.out.println(" ");
+        return output;
     }
 
     /**
      * Exercise 6:
      * Check if the string contains the words "horse", "saddle" or "spores" and if present, substitute them with an equal amount of "*".
      */
-    public void exercise6(String input) {
+    public static String exercise6(String input) {
         input = input.replaceAll("horse", "*****");
         input = input.replaceAll("saddle", "******");
         input = input.replaceAll("spores", "******");
-        System.out.println("Exercise 6) " + input);
+        return input;
     }
 
     /**
      * Exercise 7: palindrome
      */
-    public void exercise7(String input) {
-        System.out.print("Exercise 7) " + input + "|");
+    public static String exercise7(String input) {
+        String output = "";
         for (int i = input.length(); i > 0; i--) {
             int l = i - 1;
             char x = input.charAt(l);
-            System.out.print(x);
+            output = output + x;
         }
-        System.out.println(" ");
+        return input + output;
     }
 
     /**
      * Exercise 8: make the text alternate caps.
      * e.g. "hi my name is peter" -> "Hi My NaMe Is PeTeR", ignore spaces when using caps
      */
-    public void exercise8(String input) {
-        System.out.print("Exercise 8) ");
+    public static String exercise8(String input) {
+        String output = "";
         for (int i = 0; i < input.length(); i++) {
             char x = input.charAt(i);
 
             if (i % 2 == 0) {
                 x = Character.toUpperCase(x);
-                System.out.print(x);
+                output = output + x;
             } else
-                System.out.print(x);
+                output = output + x;
         }
-        System.out.println(" ");
+        return output;
     }
 
     /**
      * Exercise 9:
      * make 1337 5|*34|< out of it.
      */
-    public void exercise9(String input) {
-
+    public static String exercise9(String input) {
+        String output = "";
+        for (int i = 0; i < input.length(); i++) {
+            char x = input.charAt(i);
+            output = output + (getLeetSpeak(x) + " ");
+        }
+        return output;
     }
 
-    public String getLeetSpeak(Char c) {
-        switch (Character.toLowerCase(c)) {
+    /**
+     * Converts a char to Leet Speak
+     */
+
+    public static <Char> String getLeetSpeak(Char c) {
+        switch (Character.toLowerCase((Character) c)) {
             case 'a':
-                return ".-";
+                return "4";
             case 'b':
-                return "-...";
+                return "|3";
             case 'c':
-                return "-.-.";
+                return "(";
             case 'd':
-                return "-..";
+                return "|)";
             case 'e':
-                return ".";
+                return "3";
             case 'f':
-                return "..-.";
+                return "|=";
             case 'g':
-                return "--.";
+                return "6";
             case 'h':
-                return "....";
+                return "|-|";
             case 'i':
-                return "..";
+                return "|";
             case 'j':
-                return ".---";
+                return "9";
             case 'k':
-                return "-.-";
+                return "|<";
             case 'l':
-                return ".-..";
+                return "1";
             case 'm':
-                return "--";
+                return "|v|";
             case 'n':
-                return "-.";
+                return "|/|";
             case 'o':
-                return "---";
+                return "0";
             case 'p':
-                return ".--.";
+                return "|*";
             case 'q':
-                return "--.-";
+                return "0,";
             case 'r':
-                return ".-.";
+                return "|2";
             case 's':
-                return "...";
+                return "5";
             case 't':
-                return "-";
+                return "7";
             case 'u':
-                return "..-";
+                return "|_|";
             case 'v':
-                return "...-";
+                return "|/";
             case 'w':
-                return "...-";
+                return "|/|/";
             case 'x':
-                return "-..-";
+                return "><";
             case 'y':
-                return ".-..";
+                return "`/";
             case 'z':
-                return "--..";
+                return "2";
             case ' ':
                 return " ";
             default:
