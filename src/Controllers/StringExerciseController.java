@@ -50,7 +50,7 @@ public class StringExerciseController {
 
     public void onButton7Click(ActionEvent actionEvent) {
         String input = txtInput.getText();
-        String exNo = "Ex. 7) : ";
+        String exNo = "Ex. 7) ";
         txtOutput.setText(exNo + StringExercises.exercise7(input));
     }
 

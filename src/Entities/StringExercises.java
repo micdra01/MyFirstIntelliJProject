@@ -243,5 +243,9 @@ public class StringExercises {
 
         }
     }
+
+    public static String exercise10() {
+        return null;
+    }
 }
 
