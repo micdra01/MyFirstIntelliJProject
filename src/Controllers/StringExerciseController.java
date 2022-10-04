@@ -4,13 +4,13 @@ import Entities.StringExercises;
 import com.sun.tools.javac.Main;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 
 public class StringExerciseController {
-    public Button btnPushMe;
     public TextField txtInput;
-    public TextField txtOutput;
+    public Label txtOutput;
 
     public void onButton1Click(ActionEvent actionEvent) {
         String input = txtInput.getText();

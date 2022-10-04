@@ -18,6 +18,7 @@ public class App extends Application {
 
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Views/StringExerciseView.fxml")));
         primaryStage.setScene(new Scene(root));
+        primaryStage.setTitle("String Exercises");
         primaryStage.show();
     }
 }

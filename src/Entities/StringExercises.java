@@ -44,6 +44,85 @@ public class StringExercises {
     }
 
     /**
+     * Exercise 5:
+     * Convert the input to morse code
+     */
+    public static String exercise5(String input) {
+        String output = "";
+        for (int æ = 0; æ < input.length(); æ++) {
+            char å = input.charAt(æ);
+            output = output + (getMorse(å) + " ");
+        }
+        return output;
+    }
+
+    /**
+     * Exercise 6:
+     * Check if the string contains the words "horse", "saddle" or "spores" and if present,
+     * substitute them with an equal amount of "*".
+     */
+    public static String exercise6(String input) {
+        input = input.replaceAll("horse", "*****");
+        input = input.replaceAll("saddle", "******");
+        input = input.replaceAll("spores", "******");
+        return input;
+    }
+
+    /**
+     * Exercise 7: palindrome
+     */
+    public static String exercise7(String input) {
+        String output = "";
+        for (int i = input.length(); i > 0; i--) {
+            int l = i - 1;
+            char x = input.charAt(l);
+            output = output + x;
+        }
+        return input + output;
+    }
+
+    /**
+     * Exercise 8: make the text alternate caps.
+     * e.g. "hi my name is peter" -> "Hi My NaMe Is PeTeR", ignore spaces when using caps
+     */
+    public static String exercise8(String input) {
+        String output = "";
+        for (int i = 0; i < input.length(); i++) {
+            char x = input.charAt(i);
+            if (Character.isWhitespace(x)) {
+
+            }
+            if (i % 2 == 0) {
+                x = Character.toUpperCase(x);
+                output = output + x;
+            } else
+                output = output + x;
+        }
+        return output;
+    }
+
+    /**
+     * Exercise 9:
+     * make 1337 5|*34|< out of it.
+     */
+    public static String exercise9(String input) {
+        String output = "";
+        for (int i = 0; i < input.length(); i++) {
+            char x = input.charAt(i);
+            output = output + (getLeetSpeak(x) + " ");
+        }
+        return output;
+    }
+
+    /**
+     * Exercise 10:
+     *
+     */
+    public static String exercise10() {
+        return null;
+    }
+
+    /**
      * Converts a char to morse code
      */
     private static String getMorse(char c) {
@@ -106,76 +185,6 @@ public class StringExercises {
                 return "ERROR!";
 
         }
-    }
-
-    /**
-     * Exercise 5:
-     * Convert the input to morse code
-     */
-    public static String exercise5(String input) {
-        String output = "";
-        for (int æ = 0; æ < input.length(); æ++) {
-            char å = input.charAt(æ);
-            output = output + (getMorse(å) + " ");
-        }
-        return output;
-    }
-
-    /**
-     * Exercise 6:
-     * Check if the string contains the words "horse", "saddle" or "spores" and if present, substitute them with an equal amount of "*".
-     */
-    public static String exercise6(String input) {
-        input = input.replaceAll("horse", "*****");
-        input = input.replaceAll("saddle", "******");
-        input = input.replaceAll("spores", "******");
-        return input;
-    }
-
-    /**
-     * Exercise 7: palindrome
-     */
-    public static String exercise7(String input) {
-        String output = "";
-        for (int i = input.length(); i > 0; i--) {
-            int l = i - 1;
-            char x = input.charAt(l);
-            output = output + x;
-        }
-        return input + output;
-    }
-
-    /**
-     * Exercise 8: make the text alternate caps.
-     * e.g. "hi my name is peter" -> "Hi My NaMe Is PeTeR", ignore spaces when using caps
-     */
-    public static String exercise8(String input) {
-        String output = "";
-        for (int i = 0; i < input.length(); i++) {
-            char x = input.charAt(i);
-            if (Character.isWhitespace(x)) {
-
-            }
-            if (i % 2 == 0) {
-                x = Character.toUpperCase(x);
-                output = output + x;
-            } else
-                output = output + x;
-        }
-        return output;
-    }
-
-    /**
-     * Exercise 9:
-     * make 1337 5|*34|< out of it.
-     */
-    public static String exercise9(String input) {
-        String output = "";
-        for (int i = 0; i < input.length(); i++) {
-            char x = input.charAt(i);
-            output = output + (getLeetSpeak(x) + " ");
-        }
-        return output;
     }
 
     /**
@@ -242,10 +251,6 @@ public class StringExercises {
                 return "ERROR!";
 
         }
-    }
-
-    public static String exercise10() {
-        return null;
     }
 }
 

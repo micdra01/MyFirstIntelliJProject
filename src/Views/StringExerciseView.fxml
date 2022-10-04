@@ -1,64 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.SplitMenuButton?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.control.Tooltip?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane fx:id="dd" prefHeight="459.0" prefWidth="328.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.StringExerciseController">
+<AnchorPane fx:id="dd" prefHeight="163.0" prefWidth="328.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.StringExerciseController">
    <children>
-      <Button fx:id="btn1" layoutX="38.0" layoutY="230.0" mnemonicParsing="false" onAction="#onButton1Click" text="Ex 1)">
-         <tooltip>
-            <Tooltip fx:id="tt1" text="Ex. 1) add &lt;&gt; around input" />
-         </tooltip></Button>
       <TextField fx:id="txtInput" alignment="CENTER" layoutX="92.0" layoutY="14.0" promptText="Enter your input" />
-      <TextField fx:id="txtOutput" layoutX="24.0" layoutY="150.0" prefHeight="56.0" prefWidth="288.0" promptText="Output will be shown here" />
-      <Button fx:id="btn2" layoutX="137.0" layoutY="230.0" mnemonicParsing="false" onAction="#onButton2Click" text="Ex 2">
-         <tooltip>
-            <Tooltip text="Ex. 2) amount of characters in the input" />
-         </tooltip></Button>
-      <Button fx:id="btn3" layoutX="244.0" layoutY="230.0" mnemonicParsing="false" onAction="#onButton3Click" text="Ex 3">
-         <tooltip>
-            <Tooltip text="Ex. 3) Seperate each character with a &quot;@&quot;" />
-         </tooltip></Button>
-      <Button fx:id="btn4" layoutX="38.0" layoutY="305.0" mnemonicParsing="false" onAction="#onButton4Click" text="Ex 4">
-         <tooltip>
-            <Tooltip text="Ex. 4) Write the input characters backwards" />
-         </tooltip></Button>
-      <Button fx:id="btn5" layoutX="141.0" layoutY="305.0" mnemonicParsing="false" onAction="#onButton5Click" text="Ex 5">
-         <tooltip>
-            <Tooltip text="Ex. 5) Convert the input to morse code" />
-         </tooltip></Button>
-      <Button fx:id="btn6" layoutX="244.0" layoutY="305.0" mnemonicParsing="false" onAction="#onButton6Click" text="Ex 6">
-         <tooltip>
-            <Tooltip text="Ex. 6) Check if the string contains the words &quot;horse&quot;,  &quot;saddle&quot; or &quot;spores&quot; and if present, substitute them with an equal amount of &quot;*&quot;" />
-         </tooltip></Button>
-      <Button fx:id="btn61" layoutX="38.0" layoutY="381.0" mnemonicParsing="false" onAction="#onButton7Click" text="Ex 7">
-         <tooltip>
-            <Tooltip text="Ex. 7) Palindrome" />
-         </tooltip></Button>
-      <Button fx:id="btn62" layoutX="141.0" layoutY="381.0" mnemonicParsing="false" onAction="#onButton8Click" text="Ex 8">
-         <tooltip>
-            <Tooltip text="Ex. 8) Make the text alternate caps" />
-         </tooltip></Button>
-      <Button fx:id="btn63" layoutX="244.0" layoutY="381.0" mnemonicParsing="false" onAction="#onButton9Click" text="Ex 9">
-         <tooltip>
-            <Tooltip text="Ex. 9) Make 1337 5|*34|&lt; out of it" />
-         </tooltip></Button>
-      <SplitMenuButton layoutX="97.0" layoutY="87.0" mnemonicParsing="false" text="Choose exercise">
+      <SplitMenuButton layoutX="96.0" layoutY="61.0" mnemonicParsing="false" text="Choose exercise">
         <items>
-          <MenuItem fx:id="btn1" mnemonicParsing="false" onAction="#onButton1Click" text="Ex 1) add &lt;&gt;: " />
-          <MenuItem fx:id="btn2" mnemonicParsing="false" onAction="#onButton2Click" text="Ex 2) amount of chars: " />
-            <MenuItem fx:id="btn3" mnemonicParsing="false" onAction="#onButton3Click" text="Ex 3) seperate chars w @: " />
-            <MenuItem fx:id="btn4" mnemonicParsing="false" onAction="#onButton4Click" text="Ex 4) backwards: " />
-            <MenuItem fx:id="btn5" mnemonicParsing="false" onAction="#onButton5Click" text="Ex 5) morse code: " />
-            <MenuItem fx:id="btn6" mnemonicParsing="false" onAction="#onButton6Click" text="Ex 6) horsestuff to **: " />
-            <MenuItem fx:id="btn7" mnemonicParsing="false" onAction="#onButton7Click" text="Ex 7) palindrome: " />
-            <MenuItem fx:id="btn8" mnemonicParsing="false" onAction="#onButton8Click" text="Ex 8) alternate caps: " />
-            <MenuItem fx:id="btn9" mnemonicParsing="false" onAction="#onButton9Click" text="Ex 9) 1337 5|*34|&lt;: " />
+          <MenuItem fx:id="btn1" mnemonicParsing="false" onAction="#onButton1Click" text="Ex 1) add &lt;&gt;" />
+          <MenuItem fx:id="btn2" mnemonicParsing="false" onAction="#onButton2Click" text="Ex 2) amount of chars" />
+            <MenuItem fx:id="btn3" mnemonicParsing="false" onAction="#onButton3Click" text="Ex 3) seperate chars w @" />
+            <MenuItem fx:id="btn4" mnemonicParsing="false" onAction="#onButton4Click" text="Ex 4) backwards" />
+            <MenuItem fx:id="btn5" mnemonicParsing="false" onAction="#onButton5Click" text="Ex 5) morse code" />
+            <MenuItem fx:id="btn6" mnemonicParsing="false" onAction="#onButton6Click" text="Ex 6) horsestuff to **" />
+            <MenuItem fx:id="btn7" mnemonicParsing="false" onAction="#onButton7Click" text="Ex 7) palindrome" />
+            <MenuItem fx:id="btn8" mnemonicParsing="false" onAction="#onButton8Click" text="Ex 8) alternate caps" />
+            <MenuItem fx:id="btn9" mnemonicParsing="false" onAction="#onButton9Click" text="Ex 9) 1337 5|*34|&lt;" />
         </items>
       </SplitMenuButton>
+      <Label fx:id="txtOutput" alignment="CENTER" contentDisplay="CENTER" layoutX="38.0" layoutY="100.0" prefHeight="49.0" prefWidth="261.0" text="Output will be shown here" textAlignment="CENTER" wrapText="true" />
    </children>
 </AnchorPane>
